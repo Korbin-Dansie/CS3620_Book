@@ -1,5 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<h1 class="fw-bold">Books</h1>
+{% for book in book_list %}
+<div class="card my-2">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="{{ book.image.url }}" alt="..." style="width: 100%;">
+    </div>
+    <div class="col-md-9">
+      <div class="card-body">
+        <h4 class="card-title">{{ book.name }}</h4>
+        <p class="card-text">{{ book.description }}</p>
+      </div>      
+    </div>
+  </div>
+</div>
+{% endfor %}
 
 {% endblock %}
