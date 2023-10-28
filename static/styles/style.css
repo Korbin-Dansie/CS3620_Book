@@ -1,0 +1,62 @@
+:root{
+ --white: #FFF3E2;
+ --cream: rgb(255, 229, 202);
+ --pink: #FA9884;
+ --red: #E74646;
+}
+
+.bd-navbar{
+    background-color: var(--red);
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15), inset 0 -1px 0 rgba(255,255,255,0.15);
+}
+
+a.bd-navbar-link{
+    color: var(--white);
+}
+
+a.bd-navbar-link:hover{
+    color: var(--white);
+    padding-bottom: calc(0.5rem - 0.125rem); /* 0.5rem is bootstraps padding or nav-items */
+    border-bottom: solid 0.125rem var(--pink);
+}
+
+button.bd-btn-secondary
+{
+    background-color: var(--cream);
+}
+
+button.bd-btn-secondary:hover
+{
+    /* background: linear-gradient(to top, rgb(231, 208, 184) 10%, rgba(255, 229, 202)); */
+    background-color: var(--cream);
+    filter: brightness(105%);
+}
+
+button.bd-btn-secondary:active,
+button.bd-btn-secondary:focus,
+button.bd-btn-secondary:target,
+button.bd-btn-secondary:active:focus
+{
+    background-color: var(--cream);
+    filter: brightness(105%);
+}
+
+a.bd-btn-secondary
+{
+    background-color: var(--cream);
+}
+
+a.bd-btn-secondary:hover
+{
+    background-color: var(--cream);
+    filter: brightness(105%);
+}
+
+a.bd-btn-secondary:active,
+a.bd-btn-secondary:focus,
+a.bd-btn-secondary:target,
+a.bd-btn-secondary:active:focus
+{
+    background-color: var(--cream);
+    filter: brightness(105%);
+}

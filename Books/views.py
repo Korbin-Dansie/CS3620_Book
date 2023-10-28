@@ -5,4 +5,7 @@ from .models import BookData
 
 # Create your views here.
 def home_view(request, *args, **kwargs):
-    return render(request, "home.html") # return an html template
+    my_context = {
+        "site_title": "Home"
+    }
+    return render(request, "home.html", my_context) # return an html template
