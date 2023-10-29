@@ -23,14 +23,22 @@
     <div class="col-md-3">
       <img src="{{ book.image.url }}" alt="..." style="width: 100%;">
     </div>
-    <div class="col-md-9">
-      <div class="card-body">
+    <div class="col-md-9 d-flex">
+      <div class="card-body d-flex flex-column">
         <h4 class="card-title">
           {{ book.name }}
         </h4>
-        <p class="card-text">
-          {{ book.description }}
-        </p>
+        <h5 class="card-subtitle text-muted mb-2">{{ book.category }}</h5>
+        <div class="">
+          <p class="card-text">
+            {{ book.description }}
+          </p>  
+        </div>
+        <div class="mt-auto">
+          <p class="card-text">
+            Rating: {{ book.rating }} / 5
+          </p> 
+        </div>      
       </div>
     </div>
   </div>
