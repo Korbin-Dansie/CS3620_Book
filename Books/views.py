@@ -9,6 +9,8 @@ def home_view(request, *args, **kwargs):
     paginator = Paginator(book_list, 5)  # Show 5 contacts per page.
     
     page_number = request.GET.get("page")
+    if page_number == "" or page_number == None:
+        page_number = 1
     
     book_obj = paginator.get_page(page_number)
     page_range = paginator.get_elided_page_range(number=page_number) # add ellipsis
